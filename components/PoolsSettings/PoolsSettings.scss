@@ -1,0 +1,65 @@
+@import "../../scss/variablesSCSS";
+
+.PoolsSettings{
+    width: 100%;
+
+    &-form{
+        padding-bottom: 35px;
+        border-bottom: 1px solid rgba(#4a4a4a, .5);
+        .modal-body &{
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    &-item{
+        margin-top: 10px;
+        max-width: 330px;
+        &:first-child{
+            margin-top: 0;
+        }
+        &.is-short{
+            width: 220px;
+            .form-control{
+                width: 80px;
+            }
+        }
+    }
+
+    &-label, label.control-label{
+        display: flex;
+        align-items: center;
+    }
+
+    &-label-text{
+        width: 150px;
+        min-width: 150px;
+        margin-right: 15px;
+        color: $nobelGrayColor;
+        font-size: 12px;
+        .PoolsSettings-switch-wrap &{
+            width: 112px;
+            min-width: 112px;
+        }
+    }
+
+    .form-control{
+        height: 28px;
+        width: 188px;
+    }
+
+    &-btns{
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        .btn:first-child{
+            margin-right: 17px;
+        }
+
+        .modal &{
+            margin-top: 0;
+        }
+
+    }
+
+}

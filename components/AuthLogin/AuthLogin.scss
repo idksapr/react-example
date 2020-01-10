@@ -1,0 +1,44 @@
+@import "../../scss/variablesSCSS";
+
+.AuthLogin{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form{
+        position: relative;
+    }
+
+    &-header{
+        color: $silverColor;
+    }
+
+    &-container{
+        width: 100%;
+        max-width: 310px;
+    }
+
+    &-forgetPassword{
+        text-align: center;
+        margin-bottom: 15px;
+        letter-spacing: 0;
+        margin-top: 25px;
+        span{
+            border-bottom: 1px dotted;
+        }
+        &:hover{
+            color: $dodgerBlueColor;
+        }
+        @include w767{
+            padding: 0;
+        }
+    }
+
+    .message-container-wrap{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -15%;
+    }
+}

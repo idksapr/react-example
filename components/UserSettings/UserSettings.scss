@@ -1,0 +1,75 @@
+@import "../../scss/variablesSCSS";
+
+.UserSettings{
+  padding: 30px 40px;
+
+  &-item{
+    margin-top: 10px;
+    max-width: 330px;
+    &:first-child{
+      margin-top: 0;
+    }
+    &.is-short{
+      width: 220px;
+      .form-control{
+        width: 80px;
+      }
+    }
+  }
+
+  &-label, label.control-label{
+    display: flex;
+    align-items: center;
+  }
+
+  &-label-text{
+    width: 150px;
+    min-width: 150px;
+    margin-right: 15px;
+    color: $nobelGrayColor;
+    font-size: 12px;
+    @include w359{
+      width: 120px;
+      min-width: 120px;
+      font-size: 11px;
+    }
+    .UserSettings-switch-wrap &{
+      width: 140px;
+      min-width: 140px;
+      @include w359{
+        width: 110px;
+        min-width: 110px;
+      }
+    }
+    .PasswordChange &{
+      width: 160px;
+      min-width: 160px;
+    }
+  }
+
+  .form-control{
+    height: 28px;
+    width: 188px;
+    @include w359{
+      width: 150px;
+    }
+  }
+
+  select.form-control{
+    padding: 4px 12px;
+    min-width: 120px;
+  }
+  
+  &-switch-wrap{
+    margin-top: -6px;
+  }
+
+  &-btns{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .btn:first-child{
+      margin-right: 17px;
+    }
+  }
+}

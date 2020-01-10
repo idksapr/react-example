@@ -1,0 +1,83 @@
+@import "../../scss/variablesSCSS";
+
+.MinerSettings{
+
+    &-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        @include w540{
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-item-text{
+        color: $nobelGrayColor;
+        width: 220px;
+        margin-right: 20px;
+        @include w540{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &:last-child{
+            margin-bottom: 40px;
+        }
+    }
+
+    &-slider-wrap{
+        min-width: 180px;
+        display: flex;
+        align-items: center;
+        @include w540{
+            display: inline-block;
+        }
+    }
+
+    &-slider-value{
+        color: $nobelGrayColor;
+        padding-left: 15px;
+        min-width: 60px;
+        @include w540{
+            display: inline-block;
+        }
+    }
+
+   //button[class*='MuiSlider-thumb']{
+   //    background-color: $marinerBlueColor;
+   //}
+   //
+   // div[class*='MuiSlider-track']{
+   //     background-color: $marinerBlueColor;
+   //     height: 2px;
+   // }
+   //
+   // div[class*='MuiSlider-trackAfter']{
+   //     background-color: $fieldBackgroundColor;
+   //     opacity: 1;
+   //     height: 2px;
+   // }
+
+    &-switch-wrap{
+        margin-top: -15px;
+        margin-left: -15px;
+    }
+
+    &-btns{
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        .btn:first-child{
+            margin-right: 17px;
+        }
+    }
+
+    .message-container-wrap{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -15%;
+    }
+}
